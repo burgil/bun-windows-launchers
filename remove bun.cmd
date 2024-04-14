@@ -1,0 +1,19 @@
+@echo off
+title Removing a package from an existing bun project...
+echo Removing a package from an existing bun project...
+set /p "proj=Enter Project Name: "
+title "%proj%" - Removing a package from an existing bun project...
+echo "%proj%" - Removing a package from an existing bun project...
+cd "%proj%"
+set /p "newpack=Enter Package Name to Remove: "
+title Removing the "%proj%" package from the "%newpack%" bun project...
+echo Removing the "%proj%" package from the "%newpack%" bun project...
+call bun remove %newpack%
+echo The package "%newpack%" was removed from the "%proj%" bun project successfully!
+echo Project Location: %CD%
+echo Current Project Bun.Version:
+call type bun.version
+echo My Bun.Version:
+call bun --version
+title The package "%newpack%" was removed from the "%proj%" bun project successfully!
+pause
