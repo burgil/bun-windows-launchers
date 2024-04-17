@@ -1,6 +1,8 @@
 # bun-windows-launchers
  Bun (The NodeJS Faster Runtime) + Windows Launchers
 
+ Checkout https://www.youtube.com/watch?v=yXTFOeGly9o
+
 # Batch Tools:
 
 Usage:
